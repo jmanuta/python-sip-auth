@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # jmanuta@bluip.com | 2018.01.30
 # Description:  SIP Client Password Check
-#               This script will use a dictionary (line separated) to determine
-#               what password the client used during digest authentication.  It
-#               doesn't tell you if the password matches with what was on the 
-#               server; it just allows you to figure out what was sent.
+#               This script will use a password dictionary (line separated) to 
+#               determine what password was used by the client during digest 
+#               authentication.
 
 
 import hashlib
