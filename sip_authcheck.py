@@ -121,7 +121,7 @@ def find_match(dictionary_file):
             passwords = re.split('\n', dict_file_content)
             for password in passwords:
                 ha1 = calculate_ha1(username, realm, password)
-                methods = ('INVITE', 'REGISTER', 'UPDATE', 'REFER')
+                methods = ('INVITE', 'REGISTER', 'UPDATE', 'REFER', 'SUBSCRIBE')
                 for method in methods:
                     ha2 = calculate_ha2(method, uri)
                     my_response = calculate_response(ha1, nonce, nc, cnonce, ha2)
