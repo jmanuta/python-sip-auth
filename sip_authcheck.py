@@ -129,7 +129,6 @@ def find_match(dictionary_file):
                     if results == True:
                         match = True
                         return(password)
-                        break
             if not match:
                 return
     else:
@@ -147,7 +146,6 @@ def find_match(dictionary_file):
                     if results == True:
                         match = True
                         return(password)
-                        break
             if not match:
                 return
 
@@ -168,7 +166,6 @@ def one_guess(password):
         if results == True:
             match = True
             return(match)
-            break
     if not match:
         return(match)
 
@@ -187,9 +184,3 @@ if __name__ == '__main__':
         message += "\nUsage: \t\t{} <dictionary-file>\n".format(sys.argv[0])
         print(message)
 
-        # password = input("Enter password: ")
-        # results = one_guess(password)
-        # if results == True:
-        #    print("\nCorrect match!\n")
-        # if results == False:
-        #    print("\nPassword does not match\n")
